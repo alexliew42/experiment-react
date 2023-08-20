@@ -1,9 +1,10 @@
-import { Message } from "./Message.tsx"
+import { PokemonIndex } from "./components/PokemonIndex"
 
 function App() {
   return (
     <div>
-      <Message />;
+      <PokemonIndex />
+      hello
     </div>
   )
 }
