@@ -1,7 +1,11 @@
-export function PokemonIndex() {
+export function PokemonIndex(props) {
   return (
     <div>
-      I am in pokemon index
+      {props.data.map((pokemon) => (
+        <div key={pokemon.id}>
+          <h1> {pokemon.name} </h1>
+        </div>
+      ))}
     </div>
   )
 }
